@@ -1,0 +1,98 @@
+
+body {
+    width: 100%;
+    height: auto; /* Corrige para que o body expanda conforme o conteúdo */
+    font-family: Arial, sans-serif;
+    padding-top: 45px; /* Espaço para a barra fixa no topo */
+    background-color:#0a0a0b;
+    background-size: cover; /* Faz a imagem de fundo cobrir o body */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa */
+    overflow-y: scroll; /* Habilita o scroll apenas na vertical */
+    overflow-x: hidden; /* Evita o scroll horizontal */
+}
+
+/* Barra fixa no topo */
+/* Barra fixa no topo */
+.barra-topo {
+    position: fixed;
+    top: 0;
+	left: 0;
+    margin-left: 3%;
+    width: 100%;
+    height: 60px; /* Altura da barra */
+    background-color:#0a0a0b;; /* Cor da barra */
+    color: white;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding:0px 0px;
+    z-index: 1000;	
+}
+
+.link {
+    display: flex;
+    margin-left: auto; /* Alinha a margem à direita */
+    margin-right: 45px; /* Adiciona margem à direita */
+}
+
+.link a {
+    color: white;
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin-right: 20px; /* Espaço entre os links */
+}
+
+
+
+
+/* Estilo do contêiner principal */
+.form-container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh; /* Ocupa toda a altura da viewport */
+    background-color: #0a0a0b; 
+    margin: 0;
+}
+
+/* Estilo do contêiner do formulário */
+.container {
+    background-color: #000000;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+	position: fixed;
+}
+
+
+
+
+/* Campos de entrada de texto e seleção */
+.container select, 
+.container input[type="number"],
+.container input[type="text"],
+.container input[type="password"] {
+
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Botão de envio */
+.container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #E50914;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+

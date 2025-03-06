@@ -1,0 +1,122 @@
+
+
+body {
+	width: 100%;
+	heigth: auto;
+	font-family: Arial, sans-serif;
+    padding-top: 45px;  /* Espaço para a barra fixa no topo */
+    background-color:#0a0a0b;	
+}
+
+
+
+/* Barra fixa no topo */
+.barra-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Altura da barra */
+    background-color: #0a0a0b; /* Cor da barra */
+    color: white;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding:0px 0px;
+    z-index: 1000;	
+}
+.link {
+    display: flex;
+    margin-left: 80%;
+	margin-right: 0%;	
+}
+
+.link a {
+    color: white;
+    text-decoration: none; /* Removido para que não apareça sublinhado */
+    margin-right: 20px; /* Ajustado para dar espaço entre os links */
+}
+
+
+
+
+
+
+
+
+img{	
+    width: 660px;
+	height: 400px;
+	border-radius:10px;
+}	
+ img:hover{
+   border-radius:10px;	
+ }
+ 
+.map{
+	width: 1285px;
+	height: 300px;
+	margin: 20px 10px 10px 230px; 
+}
+iframe{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;	
+}
+
+ 
+ 
+.img2 {
+	margin: 0px 100px 30px 18px;
+	width: 96%;
+	height: 355px;
+	display: flex;
+    justify-content:center;
+    gap:1px;	
+}
+.img2 img {
+	width: 95%;
+	height: 100%;
+	object-fit:cover;
+	border-radius:20px;
+	border:0px solid  rgba( 255, 255, 255, 0.6);
+	transition: all ease-in-out 0.3s;	
+	
+}
+
+.img2 img:hover {
+	width:100%;
+    	
+}
+
+ 
+td {
+	text-align: justify;
+}
+
+h1{
+	margin-left: 3%;
+}
+
+p {
+	margin-left: 3%;
+}
+
+
+
+
+
+
+/* Barra fixa no rodapé */
+.barra-rodape {
+text-align: center;	
+padding: 10px 0;
+position: center;
+width: 100%;  
+height:30px; /* Altura da barra */  
+background-color: #0a0a0b; /* Cor da barra */   
+z-index: 1000;
+}
+
+
+

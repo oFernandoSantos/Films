@@ -1,0 +1,110 @@
+<html>
+<head> 
+
+<link rel=stylesheet href=LOGIN.css>
+<title> LOGIN FT FILMS </title>
+
+
+
+</head>
+<body>
+
+
+<div class="barra-topo">
+
+<p> <font face=Monospace size=5 color=#E50914> <b>FT</b> </font>
+<font face=sans-serif size=6 color=#f2f5f7> <b>FILMS</b> </font>  </p>
+
+
+<div class=link>
+
+<a href=FILMS.html> <font face=Arial size=2> Início </a>
+<br> </div>   
+
+</div>
+
+
+
+
+
+<section class="form-container">
+    <div class="container">
+        
+  
+<form id="cadastroForm" action="BATMAN.html" method="get" onsubmit="return validateForm()">
+            
+            
+<h1><font face="sans-serif" size="6" color="#E50914">CADASTRO</font></h1>
+               
+<p><font face="sans-serif" size="4" color="#f2f5f7">Faça seu cadastro para assistir</font></p>
+<br>
+
+ 
+  
+<br><select>
+ 
+<option value="Portugues"> Português</option>
+<option value="Portugues"> Inglês</option>	 
+</select> 
+<br>
+            <input type="number" name="idade" min="18" placeholder="Digite sua idade" required />
+            <br>
+
+            <input type="text" name="nome" placeholder="Digite seu nome" required />
+            <br>
+          
+ 
+<input type="password" name="senha" placeholder="Digite sua senha" size="20" maxlength="30" title="Digite a Senha" required /> 
+       
+
+   
+<br>
+<br>
+       
+<input type="radio" name="sexo" value="M" /> <font color="#f2f5f7">Masculino</font>
+            <input type="radio" name="sexo" value="F" /> <font color="#f2f5f7">Feminino </font>
+            
+      
+<input type="radio" name="sexo" value="Ñ" checked /> 
+<font color="#f2f5f7">Não Informar</font>
+            
+   
+<br>           
+<br>
+          
+<input type="submit" name="enviar" value="Enviar" />
+        
+</form>
+</div>
+</section>
+
+
+
+
+<div class="script">
+<script>
+function validateForm() {
+    const form = document.getElementById('cadastroForm');
+    const inputs = form.querySelectorAll('input[type="text"], input[type="number"], input[type="password"]');
+    
+    for (let input of inputs) {
+        if (input.value.trim() === '') {
+            alert('Por favor, preencha todos os campos antes de enviar.');
+            return false; // Impede o envio do formulário
+        }
+    }
+    return true; // Permite o envio do formulário
+}
+</script>
+
+
+
+</from>
+</div>
+</section>
+
+
+
+</body>
+</html>
+ 
